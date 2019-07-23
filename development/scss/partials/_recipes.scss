@@ -1,0 +1,127 @@
+.RecipeList{
+  width: 95%;
+  margin: 0px auto;
+  background-color: $grey-background;
+
+}
+.headerRecipeList{
+
+  width:97%;
+  background-color: white;
+  height:52px;
+  border-bottom:0.5px $grey-text solid;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  h3{
+    margin:5px;
+    color:$orange-special;
+    font-size: 22px;
+  }
+  button{
+    margin:5px;
+    width:30px;
+    height:30px;
+    color: $green-success;
+    background-color: transparent;
+    border:0px;
+    i{
+      font-size: 30px;
+    }
+  }
+}
+.recipeTable {
+  width: 95%;
+  margin: 0px auto;
+  height: 500px;
+  margin-top: 7px;
+
+  header {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 0.5px solid $grey-text;
+    border-top: 0.5px solid $grey-text;
+    align-items: center;
+
+    h6 {
+      font-size: 18px;
+      font-weight: 700;
+      color: $grey-header;
+    }
+
+    h6:nth-child(1) {
+      flex: 8%;
+      margin-left: 5px;
+    }
+
+    h6:nth-child(2) {
+      flex: 24%;
+      margin-left: 5px;
+    }
+
+    h6:nth-child(3) {
+      flex: 56%;
+      margin-left: 5px;
+    }
+
+    h6:nth-child(4) {
+      flex: 12%;
+      margin-left: 5px;
+    }
+  }
+
+  .savedRecipes {
+    width: 100%;
+    height: 440px;
+    margin-top:5px;
+    padding:5px;
+    overflow-y: scroll;
+    .newSavedRecipes{
+      display:flex;
+      flex-direction: row;
+      color:$grey-text;
+      border-bottom: 0.5px solid $grey-text ;
+      .recipeID{
+        flex: 8%;
+        margin-left: 5px;
+        word-break: break-word;
+      }
+      .recipeName{
+        flex: 24%;
+        margin-left: 5px;
+        word-break: break-word;
+      }
+      .recipeDescription{
+        flex: 56%;
+        margin-left: 5px;
+        word-break: break-word;
+      }
+      .recipeAction{
+        flex: 12%;
+        margin-left: 5px;
+        word-break: break-word;
+        >button:nth-child(1){
+           color: red;
+          background-color: transparent;
+          border:none;
+          color:$orange-warning;
+          i{font-size:20px;}
+          margin-left:5px;
+        }
+        >button:nth-child(2){
+          color:red;
+          background-color:transparent;
+          border:none;
+          color:$brown-trash;
+          i{font-size:20px;}
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

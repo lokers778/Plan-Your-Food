@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Zaplanuj Jedzonko</title>
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Open+Sans&display=swap" rel="stylesheet">
+    <!--local styles-->
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+
+<!-- header -->
+<header>
+    <div class="app_header">
+        <div class="logo">
+            <h1>Zaplanuj <span class="jedzonko">Jedzonko</span></h1>
+        </div>
+        <div class="user">
+            <p class="user_name">Imię</p>
+            <i class="far fa-user-circle"></i>
+        </div>
+    </div>
+</header>
+
+<div class="flex-container">
+
+    <!-- sidebar navigation -->
+    <nav>
+        <ul>
+            <li><a href="app-dashboard.html">Pulpit</a></li>
+            <li><a href="recipes.html">Przepisy</a></li>
+            <li><a href="schedules.html">Plany</a></li>
+        </ul>
+    </nav>
+
+    <!-- content window -->
+    <section class="app-content">
+
+            <div class="newRecipe">
+                <form>
+                <div class="headerRecipe">
+                    <h3>NOWY PRZEPIS</h3>
+                    <button type="submit">Zapisz i zamknij</button>
+                </div>
+                <div class="formRecipe">
+
+                        <label>Nazwa przepisu<input type="text" name="name" maxlength="50"></label><br/>
+                        <label>Opis przepisu<textarea rows="3" maxlength="360"></textarea></label>
+
+
+
+                </div>
+
+                <div class ="recipe2">
+                    <div class="instructionsRecipe">
+                        <div class="section">Instrukcje</div>
+                        <div class="instructions">
+                            <textarea rows="3" maxlength="150"></textarea><button type="button"><i class="fas fa-plus-square"></i></button>
+                        </div>
+                        <div class="description">
+                            <ol></ol>
+                        </div>
+
+                    </div>
+                    <div class="ingridientRecipe">
+                        <div class="section">Składniki</div>
+                        <div class="instructions">
+                            <input maxlength="50"><button type="button"><i class="fas fa-plus-square"></i></button>
+                        </div>
+                        <div class="description">
+                            <ol></ol>
+
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+
+    </section>
+
+</div>
+
+<script src="./js/appnewrecipes.js"></script>
+<script src="./js/variables.js"></script>
+<script src="./js/functions.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

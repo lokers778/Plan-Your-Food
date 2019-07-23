@@ -1,0 +1,241 @@
+.plans-list{
+  width: 95%;
+  margin: 0px auto;
+  background-color: $grey-background;
+  border: 1px dashed $grey-text;
+  padding: 10px;
+
+  .plans-list__header{
+    width:97%;
+    background-color: white;
+    height:52px;
+    border-bottom: solid rgba(180, 180, 180, $alpha: .8);
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  
+    h3{
+    
+    color:$orange-special;
+    font-size: 24px;
+    }
+    
+    i{
+      color: $green-success;
+      font-size: 35px;
+      border: none;
+
+      &:hover{
+        font-size: 36px;
+      }
+      &:active{
+        font-size: 36px;
+        color: adjust-color($green-success, -10, -10, -10);
+      }
+    }
+  }
+
+}
+
+.plans-list__table{
+  height: 500px;
+  overflow: auto;
+  table{
+    justify-content: center;
+    margin-top: 10px;
+    border-collapse: collapse;
+    margin: 10px auto;
+    width: 95%;
+    th, td{
+      vertical-align: top;
+      border-bottom: 2px solid rgba(200, 200, 200, $alpha: .6);
+      text-align: left;
+      padding-left: 10px;
+    }
+    th{
+      color: $grey-header;
+      font-weight: bold;
+      font-size: 23px;
+      border-top: 2px solid rgba(200, 200, 200, $alpha: .6);
+      text-transform: uppercase;
+      padding-bottom: 8px;
+      padding-top: 8px;
+    }
+
+    td{
+      color: $grey-text;
+      padding-bottom: 5px;
+      padding-top: 2px;
+      font-size: 17px;
+      vertical-align: top;
+      
+      &.plans-list__id{
+        width: 50px;
+      }
+      &.plans-list__name{
+        width: 150px;
+      }
+      &.plans-list__about{
+        width: 600px;
+        font-size: 16px;
+      }
+      &.plans-list__week{
+        width: 120px;
+      }
+      &.plans-list__actions{
+        width: 130px;
+        
+        i{
+          font-size: 25px;
+          font-weight: 100;
+          padding: 5px;
+
+          &.fa-edit{
+            color: $orange-special;
+          }
+          &.fa-trash-alt{
+            color: $brown-trash;
+          }
+          &:hover{
+            cursor: pointer;
+          }
+          &:active{
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+    
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+.formRecipe {
+
+  width:95%;
+  margin: 0px auto;
+  display:flex;
+  flex-direction: column;
+  height: 131px;
+  textarea
+  {
+    resize: none;
+    vertical-align: top;
+    margin-left: 35px;
+    width:80%;
+    height:70px;
+  }
+  input[type=text]
+  {
+    margin-left: 14px;
+    width:80%;
+  }
+  label {
+    font-size: 22px;
+    color: $grey-text;
+
+    &:nth-child(1) {
+      line-height: 60px;
+    }
+  }
+
+
+}
+.recipe2{
+  width:95%;
+  height:350px;
+  margin: 0px auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ingridientRecipe{
+  width:49%;
+  height:350px;
+  li{
+    list-style-type: disc;
+  }
+}
+.instructionsRecipe{
+  width:49%;
+  height:350px;
+}
+.section{
+  border-bottom: black 0.5px solid;
+  width:100%;
+  height:27px;
+  text-align: left;
+  font-size:22px;
+  }
+.instructions{
+  width: 100%;
+  height:80px;
+  margin-top:5px;
+  button{
+    color:$green-success;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    outline:none;
+    i {
+      font-size: 27px;
+    }
+  }
+  input{
+    width:93%;
+    margin-top:7px;
+    margin-left: 7px;
+  }
+  textarea{
+    resize: none;
+    width:93%;
+    margin-top:7px;
+    margin-left: 7px;
+    height:70%;
+  }
+}
+.description{
+  width: 100%;
+  height:60%;
+  margin-top:5px;
+  overflow-y: scroll;
+  word-wrap: break-word;
+}
+ol {
+  margin-top:5px;
+  margin-bottom:5px;
+  margin-left:25px;
+  li {
+    font-size: 14px;
+    color:$grey-text;
+
+    button.edit {
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      color:$orange-warning;
+      border: none;
+      cursor:pointer;
+    }
+
+    button.bin {
+      width: 20px;
+      height: 20px;
+      background-color: transparent;
+      color:$brown-trash;
+      border: none;
+      cursor:pointer;
+    }
+  }
+}
