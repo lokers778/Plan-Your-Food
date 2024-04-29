@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/CodersLab-core/FER_SCRUM_LAB#readme",
   "devDependencies": {
-    "browser-sync": "^2.29.1",
+    "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-sass": "^5.1.0",
